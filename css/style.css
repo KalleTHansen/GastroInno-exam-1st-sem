@@ -80,13 +80,12 @@ body {
     display: block; }
     body main p {
       color: white;
-      font-size: 1.4em;
-      -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-      hyphens: auto; }
+      font-size: 1.4em; }
     body main.whitepower div {
       background-color: white;
       margin: 2.5em auto 0; }
+      body main.whitepower div img {
+        max-width: 100%; }
       body main.whitepower div article {
         max-width: 800px;
         margin-left: auto;
