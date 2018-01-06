@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -80,7 +81,7 @@ body {
     display: block; }
     body main p {
       color: white;
-      font-size: 1.4em; }
+      font-size: 1.1em; }
     body main.whitepower div {
       background-color: white;
       margin: 2.5em auto 0; }
@@ -93,10 +94,37 @@ body {
         body main.whitepower div article p {
           color: black;
           margin: 0; }
+        body main.whitepower div article .galleri {
+          /*Både billeder og knapper i galleri*/
+          position: relative;
+          /*Tillader placering af knapper oven på billeder*/ }
+          body main.whitepower div article .galleri button {
+            /*Pile i galleri*/
+            background-color: rgba(0, 0, 0, 0.4);
+            /*Sort farve med 40% opacity*/
+            font-size: 2.2em;
+            /*Størrelse på pilen*/
+            color: white;
+            border: none;
+            padding: 0.2em;
+            /*Pilens kasse*/
+            position: absolute;
+            /*Tillader placering af knapper oven på billeder*/
+            outline: none;
+            /*Fjerner markering af knappen ved klik*/
+            -webkit-transform: translate(0%, -50%);
+                    transform: translate(0%, -50%);
+            /*Justeringer i forhold til centrum på y-aksen*/
+            top: 50%;
+            /*Placér midt på billedets y-akse*/ }
+          body main.whitepower div article .galleri .w3-display-right {
+            /*Knap til at vise næste billede i slideshow*/
+            right: 0;
+            /*Afstanden fra højre kant af kassen skal være 0*/ }
   body nav a.navn {
     text-decoration: none;
     color: white;
-    font-family: Playfair Display;
+    font-family: 'Playfair Display';
     padding-left: 2%;
     padding-top: 3%;
     clear: both;
@@ -217,6 +245,11 @@ body {
       margin: 0 auto; }
       body main.whitepower div {
         margin-top: 0.1em; }
+        body main.whitepower div article .galleri button {
+          font-size: 3em;
+          /*Størrelse på pilen*/
+          padding: 0.4em;
+          /*Pilens kasse*/ }
     body input {
       display: none; }
     body label {
