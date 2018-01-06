@@ -79,14 +79,21 @@ body {
     margin: 0 auto;
     display: block; }
     body main p {
-      color: white; }
+      color: white;
+      font-size: 1.4em;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto; }
     body main.whitepower div {
       background-color: white;
-      margin-top: 2.5em;
-      margin-bottom: 0; }
-      body main.whitepower div p {
-        color: black;
-        margin: 0; }
+      margin: 2.5em auto 0; }
+      body main.whitepower div article {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto; }
+        body main.whitepower div article p {
+          color: black;
+          margin: 0; }
   body nav a.navn {
     text-decoration: none;
     color: white;
@@ -206,7 +213,7 @@ body {
     body div figure.desktop {
       display: block; }
     body main {
-      max-width: 85%;
+      max-width: 65%;
       display: block;
       margin: 0 auto; }
       body main.whitepower div {
