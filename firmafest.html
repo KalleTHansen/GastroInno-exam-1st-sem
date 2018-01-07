@@ -57,6 +57,12 @@
             <img class="mySlides" src="img/firmafest/madtilfest.jpg">
           </div>
 
+          <div class="miniatures">
+            <img class="mini-pics" src="img/firmafest/bordtilfest.jpg" onclick="currentDiv(1)"> <!--Billeder til miniaturer-->
+            <img class="mini-pics" src="img/firmafest/winetilfest.jpg" onclick="currentDiv(2)">
+            <img class="mini-pics" src="img/firmafest/madtilfest.jpg" onclick="currentDiv(3)">
+          </div>
+
           <p>Sammen laver vi den bedste menu til jeres firmafest</p>
           <h3>Ring på +45 3110 6953</h3>
         </article>
@@ -98,15 +104,24 @@
     showDivs(slideIndex += n);
   }
 
+  function currentDiv(n) {
+  showDivs(slideIndex = n);/*Så der kan vælges gennem miniature*/
+  }
+
   function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
+    var minis = document.getElementsByClassName("mini-pics");
     if (n > x.length) {slideIndex = 1} /*Hvis n er større end antallet af billeder, vælges billede 1*/
     if (n < 1) {slideIndex = x.length} /*Hvis n er mindre end 1, altså hvis der klikkes tilbage på første billede, vælges det sidste billede*/
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
+    for (i = 0; i < minis.length; i++) {
+    minis[i].className = minis[i].className.replace("w3-opacity-off", "");
+    }
     x[slideIndex-1].style.display = "block";
+    minis[slideIndex-1].className += " w3-opacity-off";
   }
   </script>
 </html>

@@ -148,6 +148,12 @@ body {
           right: 0; /*Afstanden fra højre kant af kassen skal være 0*/
         }
           }
+        .miniatures {
+          columns: 3;
+        }
+        .w3-opacity-off {
+          border: solid black 1vmin;
+        }
         }
       }
     }

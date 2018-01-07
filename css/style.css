@@ -121,6 +121,11 @@ body {
             /*Knap til at vise næste billede i slideshow*/
             right: 0;
             /*Afstanden fra højre kant af kassen skal være 0*/ }
+        body main.whitepower div article .miniatures {
+          -webkit-columns: 3;
+                  columns: 3; }
+        body main.whitepower div article .w3-opacity-off {
+          border: solid black 1vmin; }
   body nav a.navn {
     text-decoration: none;
     color: white;
