@@ -270,6 +270,8 @@ body {
         body main.whitepower div article {
           padding: 1.5em;
           /*Dobbelte padding i desktop format*/ }
+          body main.whitepower div article h1 {
+            font-size: 2.2em; }
           body main.whitepower div article .galleri button {
             font-size: 3em;
             /*Størrelse på pilen*/

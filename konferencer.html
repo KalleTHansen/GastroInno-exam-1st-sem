@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gastronomisk Innovation | Konferencer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/029d8ada9e.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <input id="burger" type="checkbox"/>
+    <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="mobil">
+      <a class="navn" href="index.html">Gastronomisk Innovation</a>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="firmafest.html">Firmafest</a></li>
+        <li><a href="konferencer.html" class="current">Konferencer</a></li>
+        <li><a href="teambuilding.html">Teambuilding</a></li>
+        <li><a href="omos.html">Om os</a></li>
+        <li><a href="dortefonden.html">Dorte Fonden</a></li>
+      </ul>
+    </nav>
+    <nav class="desktop" >
+      <a class="navn" href="#">Gastronomisk Innovation</a>
+      <ul>
+        <li><a href="dortefonden.html">Dorte Fonden</a></li>
+        <li><a href="omos.html">Om os</a></li>
+        <li><a href="teambuilding.html">Teambuilding</a></li>
+        <li><a href="konferencer.html" class="current">Konferencer</a></li>
+        <li><a href="firmafest.html">Firmafest</a></li>
+        <li class="undtagelsen"><a href="index.html">Forside</a></li>
+      </ul>
+    </nav>
+    <main class="whitepower" >
+      <div class="">
+        <img src="img/konferencer/konferencerbanner.jpg" alt="Kødanretning på flise">
+        <article>
+          <h1>Konferencer</h1>
+          <h3>Af&shy;hold en minde&shy;værdig kon&shy;ference i et stemnings&shy;fuldt lo&shy;kale med spænd&shy;ende an&shy;retninger under&shy;vejs.</h3>
+          <p>Vi sørger for behage&shy;lige om&shy;givel&shy;ser og inspire&shy;rende an&shy;retning&shy;er, så I kan af&shy;holde et ander&shy;ledes møde, hvor sans&shy;erne stimu&shy;leres. Antal&shy;let og typen af ret&shy;ter og drikke&shy;varer bestem&shy;mer I helt selv; fæl&shy;les for alt er, at serve&shy;ring&shy;erne vil sæt&shy;te kreativ&shy;iteten i gang.</p>
+          <p>Der vil være frisk&shy;brygget kaffe og te gen&shy;nem hele mødet samt både projek&shy;tor, white&shy;board og højt&shy;talere til rådighed.</p>
+
+          <div class=galleri> <!--Knapper til at skifte billede-->
+            <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+            <img class="mySlides" src="img/konferencer/grintilkonf.jpg"> <!--Billeder til galleriet-->
+            <img class="mySlides" src="img/konferencer/tjenertilkonf.jpg">
+            <img class="mySlides" src="img/konferencer/projektortilkonf.jpg">
+          </div>
+
+          <div class="miniatures">
+            <img class="mini-pics" src="img/konferencer/grintilkonf.jpg" onclick="currentDiv(1)"> <!--Billeder til miniaturer-->
+            <img class="mini-pics" src="img/konferencer/tjenertilkonf.jpg" onclick="currentDiv(2)">
+            <img class="mini-pics" src="img/konferencer/projektortilkonf.jpg" onclick="currentDiv(3)">
+          </div>
+
+          <p>Sammen planlægger vi jeres drømmemøde</p>
+          <h2>Ring på +45 3110 6953</h2>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="formdiv">
+        <form action="action_page.php">
+          <div class="mail" >
+            <a href="http://nicolaikilhof.dk/gastronomisk-innovation/img/kallemanden.mov" ><h3>Tilmeld nyhedsbrev</h3></a>
+            <input type="text" placeholder="Email" name="email" required>
+            <button type="submit" class="signupbtn">Tilmeld</button>
+          </div>
+        </form>
+      </div>
+      <div class="kontaktinfo">
+        <div class="">
+          <a href="https://goo.gl/maps/WK9mbAa1QhL2">Adr: Frederiksborggade 1B 4.th. | 1360 København K</a>
+        </div>
+        <div class="">
+          <a href="mailto: info@gastronomiskinnovation.dk">E-mail: info@gastronomiskinnovation.dk</a>
+        </div>
+        <div class="">
+          <a href="tel:31106953">Tlf: +45 3110 6953</a>
+        </div>
+      </div>
+      <div class="someikoner">
+        <a href="https://www.facebook.com/281933641918247/" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/gastronomiskinnovation/" ><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+  /*Galleri*/
+  var slideIndex = 1; /*Sættes til 1 ved indlæsning, så første billede vises*/
+  showDivs(slideIndex);
+
+  function plusDivs(n) { /*Læg en til variablen, når der trykkes på pil højre*/
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+  showDivs(slideIndex = n);/*Så der kan vælges gennem miniature*/
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var minis = document.getElementsByClassName("mini-pics");
+    if (n > x.length) {slideIndex = 1} /*Hvis n er større end antallet af billeder, vælges billede 1*/
+    if (n < 1) {slideIndex = x.length} /*Hvis n er mindre end 1, altså hvis der klikkes tilbage på første billede, vælges det sidste billede*/
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    for (i = 0; i < minis.length; i++) {
+    minis[i].className = minis[i].className.replace("w3-opacity-off", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    minis[slideIndex-1].className += " w3-opacity-off";
+  }
+  </script>
+</html>

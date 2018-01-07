@@ -332,6 +332,9 @@ body{
 
         article{
           padding: 1.5em; /*Dobbelte padding i desktop format*/
+          h1 {
+            font-size: 2.2em;
+          }
           .galleri{
             button{
               font-size: 3em; /*Størrelse på pilen*/
@@ -360,7 +363,6 @@ body{
       background-color: black;
       height: 3em;
       width: 100%;
-
       z-index: 10000;
       a{
         &.navn{
