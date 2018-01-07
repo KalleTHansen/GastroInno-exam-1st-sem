@@ -79,9 +79,6 @@ body {
     max-width: 90%;
     margin: 0 auto;
     display: block; }
-    body main p {
-      color: white;
-      font-size: 1.1em; }
     body main.whitepower div {
       background-color: white;
       margin: 2.5em auto 0; }
@@ -89,11 +86,14 @@ body {
         max-width: 100%; }
       body main.whitepower div article {
         max-width: 800px;
-        margin-left: auto;
-        margin-right: auto; }
+        margin: auto;
+        padding: 0.5em; }
+        body main.whitepower div article h3 {
+          margin-bottom: 0.3em; }
         body main.whitepower div article p {
           color: black;
-          margin: 0; }
+          font-size: 1.1em;
+          margin-top: 0.5em; }
         body main.whitepower div article .galleri {
           /*Både billeder og knapper i galleri*/
           position: relative;
@@ -245,11 +245,14 @@ body {
       margin: 0 auto; }
       body main.whitepower div {
         margin-top: 0.1em; }
-        body main.whitepower div article .galleri button {
-          font-size: 3em;
-          /*Størrelse på pilen*/
-          padding: 0.4em;
-          /*Pilens kasse*/ }
+        body main.whitepower div article {
+          padding: 1em;
+          /*Dobbelte padding i desktop format*/ }
+          body main.whitepower div article .galleri button {
+            font-size: 3em;
+            /*Størrelse på pilen*/
+            padding: 0.4em;
+            /*Pilens kasse*/ }
     body input {
       display: none; }
     body label {

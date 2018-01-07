@@ -102,7 +102,7 @@
     var i;
     var x = document.getElementsByClassName("mySlides");
     if (n > x.length) {slideIndex = 1} /*Hvis n er større end antallet af billeder, vælges billede 1*/
-    if (n < 1) {slideIndex = x.length}
+    if (n < 1) {slideIndex = x.length} /*Hvis n er mindre end 1, altså hvis der klikkes tilbage på første billede, vælges det sidste billede*/
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
