@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: open sans; }
 
 body {
@@ -22,8 +21,7 @@ body {
       top: 30.8vh;
       display: block;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       background-color: rgba(0, 0, 0, 0.5); }
   body footer {
     padding-top: 5vh;
@@ -55,8 +53,7 @@ body {
           padding: 12px 20px;
           display: inline-block;
           border: 1px solid #ccc;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box;
+          box-sizing: border-box;
           border-radius: 10px;
           padding: 0.5em; }
       body footer div.someikoner {
@@ -121,8 +118,7 @@ body {
             /*Tillader placering af knapper oven på billeder*/
             outline: none;
             /*Fjerner markering af knappen ved klik*/
-            -webkit-transform: translate(0%, -50%);
-                    transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
             /*Justeringer i forhold til centrum på y-aksen*/
             top: 50%;
             /*Placér midt på billedets y-akse*/ }
@@ -132,8 +128,7 @@ body {
             /*Afstanden fra højre kant af kassen skal være 0*/ }
         body main.whitepower div article .miniatures {
           /*Miniaturer under det store billede i galleriet*/
-          -webkit-columns: 3;
-                  columns: 3;
+          columns: 3;
           /*3 miniaturer ved siden af hinanden*/
           width: 100%;
           margin: 0.5em 0 0 0;
@@ -185,7 +180,6 @@ body {
       left: 0;
       display: block;
       background: white;
-      -webkit-transition: .5s;
       transition: .5s; }
     body input + label span:first-child {
       top: 20%; }
@@ -198,12 +192,10 @@ body {
     top: 50%; }
   body input:checked + label span:first-child {
     opacity: 1;
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg); }
+    transform: rotate(225deg); }
   body input:checked + label span:last-child {
     opacity: 1;
-    -webkit-transform: rotate(-225deg);
-            transform: rotate(-225deg); }
+    transform: rotate(-225deg); }
   body input ~ nav.mobil {
     background: black;
     position: fixed;
@@ -211,10 +203,8 @@ body {
     left: 0;
     width: 100%;
     height: 8.5vh;
-    -webkit-transition: .5s;
     transition: .5s;
-    -webkit-transition-delay: .5s;
-            transition-delay: .5s;
+    transition-delay: .5s;
     z-index: 100000; }
     body input ~ nav.mobil > ul {
       position: absolute;
@@ -225,10 +215,8 @@ body {
       display: none; }
       body input ~ nav.mobil > ul > li {
         opacity: 0;
-        -webkit-transition: .5s;
         transition: .5s;
-        -webkit-transition-delay: 0s;
-                transition-delay: 0s; }
+        transition-delay: 0s; }
         body input ~ nav.mobil > ul > li > a {
           font-family: Open Sans;
           text-decoration: none;
@@ -242,14 +230,12 @@ body {
             color: #FFBC37; }
   body input:checked ~ nav {
     height: 100%;
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s; }
+    transition-delay: 0s; }
     body input:checked ~ nav > ul {
       display: block; }
       body input:checked ~ nav > ul > li {
         opacity: 1;
-        -webkit-transition-delay: .5s;
-                transition-delay: .5s; }
+        transition-delay: .5s; }
 
 @media screen and (min-width: 700px) {
   * {
@@ -262,7 +248,7 @@ body {
     body div figure.desktop {
       display: block; }
     body main {
-      max-width: 65%;
+      max-width: 85%;
       display: block;
       margin: 0 auto; }
       body main.whitepower div {
@@ -320,11 +306,8 @@ body {
             body nav.desktop ul li a.current {
               color: #FFBC37; }
     body footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+      justify-content: space-around; }
       body footer div {
         display: inline-block;
         display: inline-block; }
@@ -339,11 +322,8 @@ body {
         body footer div.kontaktinfo {
           width: 50%;
           padding-top: 1em;
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
+          justify-content: space-around;
           border-left: 1px solid white;
           border-right: 1px solid white;
           padding-bottom: 0.1em;
@@ -351,3 +331,5 @@ body {
           margin-top: 0.5em; }
         body footer div.someikoner {
           margin-top: 0.8em; } }
+
+/*# sourceMappingURL=style.css.map */
